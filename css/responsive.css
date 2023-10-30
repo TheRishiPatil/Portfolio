@@ -1,0 +1,533 @@
+/********** 1440px **********/
+
+@media screen and (max-width: 1441px) {
+
+    /* Top */
+    .name-font {
+        font-size: 45px;
+    }
+
+    .top-headline {
+        font-size: 17px;
+    }
+
+    .top-img {
+        height: 75vh;
+    }
+
+    /* Mid-3 & Mid-4 */
+    .project-container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .item {
+        box-shadow: 0 10px 20px black;
+    }
+}
+
+/********** 1280px **********/
+
+
+@media screen and (max-width: 1281px) {
+    .nav-div{
+        padding: 10px 10px;
+    }
+
+    .nav-div{
+        padding: 8px 10px;
+    }
+    
+    .nav-text {
+        padding: 10px 20px;
+    }
+
+    /* Top */
+    .name-font {
+        font-size: 40px;
+    }
+
+    .top-img {
+        height: 70vh;
+    }
+
+    /* Mid-1 */
+    .mid-1-table th {
+        padding-bottom: 5px;
+    }
+
+    .th-head {
+        padding-right: 80px;
+    }
+
+
+    /* Mid-3 & Mid-4 */
+    .project-container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .item {
+        box-shadow: 0 10px 20px black;
+    }
+
+    .item:nth-child(2) {
+        left: calc(50% + 250px);
+    }
+
+    .item:nth-child(n+3) {
+        left: calc(50% + 410px);
+    }
+
+    /* Footer */
+    .footer-subcontainer {
+        max-width: 1000px;
+    }
+}
+
+/********** 1024px **********/
+
+@media screen and (max-width: 1025px) {
+    .big-font {
+        font-size: 40px;
+    }
+
+    .nav-div{
+        padding: 6px 8px;
+    }
+
+    .nav-text {
+        font-size: 16px;
+    }
+
+    .head-text {
+        font-size: 13px;
+    }
+
+    .desc {
+        font-size: 11px;
+        width: 350px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .button-img {
+        width: 15px;
+        margin-left: 10px;
+    }
+
+    /* Contact */
+
+    .popup{
+        width: 300px;
+    }
+
+    .close-button{
+        padding: 8px;
+    }
+
+    .close-button img {
+        width: 12px;
+    }
+
+    form input, form textarea{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .popup form button {
+        padding: 7px;
+        font-size: 14px;
+        width: 130px;
+    }
+    
+    /* Top */
+    .name-font {
+        font-size: 35px;
+        width: 550px;
+    }
+
+    .top-img {
+        height: 60vh;
+    }
+
+    /* Mid-1 */
+
+    .mid-1-above{
+        margin-right: 100px;
+     } 
+
+    .mid-1-head{
+        font-size: 20px;
+    }
+
+    .mid-1-socials a{
+        margin-right: 7px;
+    }
+
+    .social{
+        width: 23px;
+    }
+
+    /* skills */
+
+    .one-line-skills-above {
+        margin-bottom: 30px;
+    }
+
+    .progress {
+        width: 110px;
+        height: 70px;
+    }
+
+    .progress::before {
+        width: 100px;
+        height: 60px;
+    }
+
+    .percentage {
+        font-size: 20px;
+    }
+
+    .skill-name {
+        font-size: 12px;
+    }
+
+    /* Mid-3 & Mid-4 */
+    .item:nth-child(2),
+    .item:nth-child(n+3) {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-subcontainer {
+        max-width: 800px;
+    }
+
+    .footer-text {
+        font-size: 11px;
+    }
+
+    .footer-section-heading {
+        font-size: 14px;
+    }
+
+    .copyright-tag {
+        font-size: 9px;
+    }
+
+    .vertical-line {
+        height: 100px;
+    }
+}
+
+/********** 884px **********/
+
+@media screen and (max-width : 885px) {
+
+    .head-text {
+        font-size: 15px;
+    }
+
+    .desc {
+        font-size: 12px;
+        width: 700px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .button-img {
+        width: 20px;
+        margin-left: 15px;
+    }
+
+    /* Top */
+    .top {
+        padding: 0px 50px;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .top-info{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .name-font {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .top-headline{
+        font-size: 18px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .words{
+        text-align: left;
+    }
+
+    .top-img-div {
+        height: auto;
+    }
+
+    .top-img {
+        height: 55vh;
+    }
+
+    /* Mid-1 */
+    .mid-1 {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .mid-1-above, .mid-1-above-left, .mid-1-above-right{
+        margin-right: 0;
+        margin-bottom: 30px;
+    } 
+
+    .mid-1-above-left .head-text, .mid-1-above-left .mid-1-socials {
+        margin-bottom: 15px;
+    }
+
+    .mid-1-table th {
+        text-align: center;
+    }
+
+    .mid-1-socials a{
+        margin-right: 10px;
+    }
+
+    .last-social-icon{
+        margin-right: 0;
+    }
+
+    .mid-1-socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social{
+        width: 28px;
+    }
+
+    .mid-1-head{
+        font-size: 25px;
+    }
+
+    .progress {
+        width: 130px;
+        height: 80px;
+    }
+    
+    .progress::before {
+        width: 120px;
+        height: 70px;
+    }
+
+    .percentage {
+        font-size: 25px;
+    }
+    
+    .skill-name {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-subcontainer {
+        max-width: 600px;
+    }
+
+    .vertical-line {
+        height: 100px;
+    }
+}
+
+/********** 480px **********/
+
+@media screen and (max-width : 480px) {
+    .nav-div{
+        padding: 3px 8px;
+    }
+
+    .nav-text {
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+    .big-font {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .head-text {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .desc {
+        font-size: 8px;
+        width: 300px;
+    }
+    
+    .button-div{
+        margin-top: 0px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 12px;
+        border: 1px solid #10A9F5;
+    }
+
+    .button-img {
+        width: 15px;
+        margin-left: 10px;
+    }
+
+    /* Top */
+    .top {
+        padding: 0px 20px;
+    }
+
+    .top-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .name-font {
+        font-size: 23px;
+        margin-bottom: 10px;
+        width: 250px;
+    }
+
+    .top-headline{
+        font-size: 11px;
+        height: 16px;
+        margin-bottom: 5px;
+    }
+
+    
+    .words span{
+        padding-left: 4px;
+    }
+
+    .top-img {
+        height: 50vh;
+    }
+
+    /* Contact */
+
+    .popup{
+        width: 250px;
+    }
+
+    .close-button{
+        padding: 8px;
+    }
+
+    .close-button img {
+        width: 12px;
+    }
+
+    form input, form textarea{
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .popup form button {
+        margin: 10px auto 0;
+        padding: 7px;
+        font-size: 14px;
+        width: 100px;
+    }
+
+    /* Mid-1 */
+
+    .mid-1-table th {
+        padding-bottom: 0px;
+    }
+
+    .mid-1-above, .mid-1-above-left, .mid-1-above-right{
+        margin-right: 0;
+        margin-bottom: 15px;
+    } 
+
+    .mid-1-above-left .head-text, .mid-1-above-left .mid-1-socials {
+        margin-bottom: 5px;
+    }
+    
+    .mid-1-head{
+        font-size: 15px;
+    }
+
+    .social{
+        width: 20px;
+    }
+
+    .one-line-skills-above {
+        margin-bottom: 0px;
+    }
+
+    .skill {
+        margin-bottom: 20px;
+    }
+
+    .progress {
+        width: 95px;
+        height: 55px;
+    }
+
+    .progress::before {
+        width: 90px;
+        height: 50px;
+    }
+
+    .percentage {
+        font-size: 18px;
+    }
+
+    .skill-name {
+        font-size: 10px;
+    }
+
+    /* Footer */
+
+    .right-section {
+        display: none;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .Contact-section {
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .footer-subcontainer {
+        display: contents;
+    }
+
+    .left-section {
+        display: block;
+    }
+
+}

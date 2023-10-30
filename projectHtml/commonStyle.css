@@ -1,0 +1,194 @@
+body {
+    color: white;
+    font-family: 'Oxanium', cursive;
+}
+
+/************* Top *****************/
+
+.container {
+    margin: 30px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    margin-right: 50px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.project-head-text {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+}
+
+.head-text {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.big-font {
+    font-size: 50px;
+    font-weight: 700;
+    margin: -5px -3px;
+}
+
+.big-font-span {
+    color: #10A9F5;
+}
+
+.desc {
+    font-size: 13px;
+    font-weight: 300;
+    width: 500px;
+    color: #B2B2B2;
+}
+
+.code-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.code-link:hover {
+    color: #10A9F5;
+}
+
+/************* Mid *****************/
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+/************* responsive *****************/
+
+@media screen and (max-width: 1024px) {
+
+    .desc {
+        font-size: 11px;
+        width: 350px;
+    }
+
+    .thumbnail {
+        width: 130px;
+        height: 180px;
+    }
+
+    .thumbnail img {
+        width: 100%;
+    }
+
+    .project-head-text {
+        font-size: 25px;
+    }
+
+    .head-text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width : 851px) {
+    .small-screen-desc {
+        width: auto;
+        text-align: center;
+    }
+
+    .head-text {
+        font-size: 11px;
+    }
+
+    .mid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .small-screen-desc {
+        order: 2;
+    }
+
+    .mid-img {
+        order: 1;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .project-head-text{
+        font-size: 20px;
+    }
+
+    .project-head{
+        text-align: center;
+    }
+
+    .head-text {
+        font-size: 9px;
+    }
+
+    .thumbnail {
+        width: 100px;
+        height: 150px;
+        margin-right: 0;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .head-img {
+        margin-right: 0;
+    }
+
+    .desc {
+        font-size: 8px;
+        width: auto;
+    }
+
+    .container {
+        margin: 15px;
+    }
+}
+
+/* Animation */
+
+.hidden{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0px);
+}
