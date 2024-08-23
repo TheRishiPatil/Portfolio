@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    height: 90vh;
+    background-color: #0D0D10;
+    font-family: 'Oxanium', cursive;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loading-gif{
+    width: 150px;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-width : 480px) {
+    .loading-gif{
+        width: 150px;
+    }
+    
+    .text {
+        font-size: 12px;
+    }
+}

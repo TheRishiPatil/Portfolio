@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="project3.css">
+    <link rel="stylesheet" href="commonStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="head-img">
+                <img class="thumbnail hidden" src="projects/thumbnail3.jpg" alt="thumbnail">
+            </div>
+            <div class="project-head">
+                <h1 class="project-head-text hidden">Smart Mirror</h1>
+                <h4 class="head-text hidden"><span class="big-font-span">Used Languages: </span>Python</h4>
+                <p class="desc hidden">Introducing our innovative Smart Mirror, a unique fusion of information and home
+                    security. Powered by a Raspberry Pi 3 B+, camera, PIR sensor, and a screen. The smart mirror
+                    operates in two modes: Normal mode and Triggered mode. In Normal mode, it displays real-time
+                    information, while Triggered mode transforms it into a vigilant security system. With motion
+                    detection, it sends intrusion alerts along with visible video footage to the owner's mobile device,
+                    offering both convenience and peace of mind. This Smart Mirror project redefines mirrors, making
+                    them an integral part of home security.</p>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="mid-img">
+                <img class="project-img-1 hidden" src="projects/Safety Layer 3.png" alt="img">
+            </div>
+            <p class="desc small-screen-desc hidden">This system combines facial recognition access with hidden security features within a smart
+                mirror-cupboard combo. Authorized users gain access through facial recognition, while any unauthorized
+                attempts activate a concealed PIR sensor and camera. The Raspberry Pi records break-in events, sending
+                alerts to the owner via Push-bullet, including video evidence for potential security threats, making it
+                a discreet yet powerful security solution.<br>
+                The system has 2 modes:<br>
+                Normal mode & Triggered mode.
+            </p>
+        </div>
+        <div class="mid">
+            <p class="desc small-screen-desc hidden">During Normal mode, the mirror serves as a hub for displaying crucial information like the
+                date, time, temperature, weather updates, and breaking news. This feature is especially useful for busy
+                individuals who may not have the time to keep up with current events on their own, saving them valuable
+                time. Along with the information display, the mirror also serves face detection feature in this mode. It
+                detects the faces of the people continuosly and sends the notification to the owner via Gmail if it
+                detects faces other than the registered users. <br> <br>
+                The smart mirror functions as a regular mirror for grooming purposes, but also displays real-time
+                information on the screen at the same time. This allows the user to simultaneously perform their morning
+                routine while staying up-to-date with important information. </p>
+            <div class="mid-img">
+                <img class="project-img-2 hidden" src="projects/Safety Layer 1.png" alt="img">
+            </div>
+        </div>
+        <div class="mid">
+            <div class="mid-img">
+                <img class="project-img-3 hidden" src="projects/Safety Layer 2.png" alt="img">
+            </div>
+            <p class="desc small-screen-desc hidden">During Triggered mode, the system acts as a security system. In triggered mode the system
+                detects intrusion activity and sends alerts to the owner's mobile device, can help provide peace of mind
+                and deter potential thieves. This can be especially important for people who live in areas with high
+                crime rates or who have experienced theft or other security incidents in the past. During this mode, The
+                display is turned off and it behaves as normal mirror while the raspberry pi functions at the background
+                hence using the face detection feature. The system continuously monitors the faces and sends the
+                notification to the user via gmail if it detects any unknown faces other than registered users. <br>
+                <br>
+                Further we have added an extra security layer in the form of PIR sensor.The PIR sensor is designed to
+                detect any
+                motion in front of it. This PIR sensor is fitted inside the cupboard. So if the thief accidentally
+                breaches the face detection feature and opens the cupboard to access the locker , then the PIR sensor
+                fitted inside detects the motion and the system sends an alert message to the owner's mobile device.
+                Additionally, the system captures a clear video of the intruder and delivers it to the owner's mobile
+                device.
+            </p>
+        </div>
+        <div class="video-container hidden">
+            <video controls src="projects/output.mp4"></video>
+        </div>
+        <div class="video-text hidden">
+            <h4 class="head-text">Final Output</h4>
+        </div>
+    </div>
+
+    <script src="projectScript.js"></script>
+</body>
+
+</html>

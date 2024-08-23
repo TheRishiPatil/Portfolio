@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishikesh Patil - UI Designer & Java Developer Portfolio</title>
+    <meta name="description" content="Discover Rishikesh Krishna Patil's portfolio, featuring creative UI designs with Java development projects. Explore his expertise and get in touch for your next project collaboration!">
+
+    <link rel="shortcut icon" href="photos/extra/icon.png" type="x-icon">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/ThankyouPage.css">
+</head>
+
+<body>
+   <div class="container">
+    <img class="loading-gif" src="photos/extra/loading.gif" alt="loading">
+    <h1 class="text">Thank you for responding. I'll surely reply soon!</h1>
+    <div class="text" id="secondDisplay"></div>
+   </div>
+
+    <script>
+        var second = 5;
+
+        function displaySeconds() {
+            second -= 1;
+            document.getElementById("secondDisplay").innerText = "This page will redirect in " + second + " seconds!";
+        }
+
+        var countdownInterval = setInterval(displaySeconds, 1000);
+
+        function redirectPage() {
+            clearInterval(countdownInterval);
+            window.location = "https://therishipatil.github.io/Portfolio/";
+        }
+
+        setTimeout(redirectPage, 5000);
+    </script>
+</body>
+
+</html>

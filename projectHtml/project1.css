@@ -1,0 +1,54 @@
+.project-left-img{
+    width: 400px;
+    margin-right: 50px;
+}
+
+.project-right-img{
+    width: 400px;
+    margin-left: 50px;
+}
+
+video{
+    width: 70%;
+    cursor: pointer;
+}
+
+/************* responsive *****************/
+
+@media screen and (max-width: 1024px) {
+    .project-left-img{
+        width: 300px;
+        margin-right: 30px;
+    }
+
+    .project-right-img{
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width : 851px) {
+    .project-left-img{
+        width: 350px;
+        margin-right: 0px;
+    }
+
+    .project-right-img{
+        width: 350px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .project-left-img{
+        width: 250px;
+    }
+
+    .project-right-img{
+        width: 250px;
+    }
+
+    video{
+        width: 100%;
+    }
+}
