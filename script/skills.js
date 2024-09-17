@@ -1,6 +1,6 @@
 function startSkillAnimation() {
     let skills = document.querySelectorAll(".skill");
-    let targetPercentages = [65, 65, 60, 70, 65, 50];
+    let targetPercentages = [65, 65, 60, 70, 65, 60];
 
     skills.forEach((skill, index) => {
         let progress = skill.querySelector(".progress");
