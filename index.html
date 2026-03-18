@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Developer Portfolio</title>
+  <meta name="description" content="A scrollytelling personal portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-pill">
+      <a href="#scrolly-container" class="nav-link active" data-section="home">Home</a>
+      <a href="#about" class="nav-link" data-section="about">About Me</a>
+      <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact Me</a>
+      <span class="nav-indicator"></span>
+    </div>
+  </nav>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <p class="loader-text">Loading Website..&hellip;</p>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar" id="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Scrollytelling Section -->
+  <div id="scrolly-container">
+    <div id="sticky-viewport">
+      <canvas id="scrolly-canvas"></canvas>
+
+      <!-- Overlay Panels -->
+      <div id="overlay">
+        <!-- Panel 1: 0 – 20% -->
+        <div class="overlay-panel" id="panel-1">
+          <div class="panel-center">
+            <h1 class="hero-title">Rishikesh Patil</h1>
+            <p class="hero-sub">AI Engineer</p>
+            <!-- <a href="#projects" class="hero-btn">Contact Me</a> -->
+          </div>
+        </div>
+
+        <!-- Panel 2: 20 – 40% -->
+        <div class="overlay-panel" id="panel-2">
+          <h2 class="section-heading panel-left">
+            I build AI <br>automations
+          </h2>
+        </div>
+
+        <!-- Panel 3: 50 – 70% -->
+        <div class="overlay-panel" id="panel-3">
+          <h2 class="section-heading panel-right">
+            I ship real <br>intelligence
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-layout">
+
+        <!-- Main Column -->
+        <div class="about-main-col">
+          <h2 class="about-title">ABOUT ME</h2>
+
+          <p class="about-bio">
+            <span class="about-highlight">⚡ Rishikesh</span> is a passionate AI Engineer focused on building innovative,
+            production-ready systems that scale beyond prototypes. With strong foundations in Python and SQL, and
+            hands-on
+            expertise in Machine Learning, Deep Learning, and NLP, he transforms complex problems into intelligent
+            solutions. Having solved 250+ DSA challenges, <strong>Rishikesh blends algorithmic precision with real-world
+              execution.</strong> His approach focuses on seamless deployment, ensuring that every AI system is
+            reliable,
+            scalable, and built to matter.
+          </p>
+
+          <!-- Author Row -->
+          <div class="about-author-row">
+            <div class="about-avatar-grad"><img src="components/luffy.jpg" alt="Rishikesh" /></div>
+            <div>
+              <p class="about-author-name">Rishikesh Patil</p>
+              <p class="about-author-role">AI Engineer</p>
+              <!-- <p class="about-author-role">+91 9137108042</p> -->
+              <!-- <p class="about-author-role">rishikeshpatil400@gmail.com</p> -->
+            </div>
+          </div>
+
+          <!-- Stats Row -->
+          <div class="about-stats-row">
+            <div class="about-stat">
+              <span class="about-stat-num">250+</span>
+              <span class="about-stat-label">DSA Problems</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-num">1.5+</span>
+              <span class="about-stat-label">Years Experience</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-num">10+</span>
+              <span class="about-stat-label">AI Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Social Bar -->
+        <div class="about-social-bar">
+          <a href="https://github.com/TheRishiPatil" target="_blank" class="about-social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.022A9.606 9.606 0 0112 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/patilrishikesh/" target="_blank" class="about-social-link"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="https://x.com/Rishi9137108042" target="_blank" class="about-social-link" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+            </svg>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=919137108042" target="_blank" class="about-social-link"
+            aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/i_a_m_i_r_o_n_m_a_n/" target="_blank" class="about-social-link"
+            aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+          </a>
+        </div>
+
+      </div><!-- /.about-layout -->
+    </div><!-- /.about-inner -->
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="glowing-section">
+    <div class="experience-inner">
+      <div class="about-bottom">
+        <div class="experience-left">
+          <h2 class="exp-title">EXPERIENCE</h2>
+          <p class="exp-summary">
+            Built and deployed AI systems across real-world domains. Led end-to-end development
+            of intelligent pipelines, prototypes, and production-grade AI solutions.
+          </p>
+        </div>
+
+        <div class="experience-right">
+          <div class="exp-item" data-color="red">
+            <div class="exp-header">
+              <div class="exp-brand">
+                <img src="components/companies/pare_innovations.jpg" class="exp-logo" alt="Pare Innovations Logo">
+                <div>
+                  <h3 class="exp-company">Pare Innovations</h3>
+                  <p class="exp-role">AI Engineer</p>
+                </div>
+              </div>
+              <span class="exp-date">March 2026 – Present</span>
+            </div>
+            <p class="exp-desc">
+              Developing advanced AI solutions, leveraging cutting-edge NLP and computer vision technologies.
+            </p>
+          </div>
+
+          <div class="exp-item" data-color="blue">
+            <div class="exp-header">
+              <div class="exp-brand">
+                <img src="components/companies/prudent_tech.jpg" class="exp-logo" alt="Prudent Tech Logo">
+                <div>
+                  <h3 class="exp-company">Prudent Tech</h3>
+                  <p class="exp-role">AI Engineer</p>
+                </div>
+              </div>
+              <span class="exp-date">Dec 2024 – Feb 2026</span>
+            </div>
+            <p class="exp-desc">
+              Developed production-ready AI projects end-to-end, taking full ownership from understanding client requirements to model development, deployment, and continuous improvement.
+            </p>
+          </div>
+        </div>
+      </div><!-- /.about-bottom -->
+
+    </div><!-- /.experience-inner -->
+  </section>
+
+  <!-- My Expertise Section -->
+  <section id="expertise" class="glowing-section">
+    <div class="expertise-inner">
+      <h2 class="section-badge">MY EXPERTISE</h2>
+
+      <div class="bento-grid">
+        <!-- Card 1: Machine Learning -->
+        <div class="bento-card" data-color="blue">
+          <div class="bento-header">
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="bento-title">Machine Learning</h3>
+          </div>
+          <p class="bento-desc">Customizing predictive models and algorithms to fit your specific vision with limitless choices for accuracy and scale.</p>
+        </div>
+
+        <!-- Card 2: Deep Learning -->
+        <div class="bento-card" data-color="orange">
+          <div class="bento-header">
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="bento-title">Deep Learning</h3>
+          </div>
+          <p class="bento-desc">Building powerful neural networks and computer vision pipelines to reflect your unique style with limitless choices for intelligence.</p>
+        </div>
+
+        <!-- Card 3: NLP & LLMs -->
+        <div class="bento-card" data-color="teal">
+          <div class="bento-header">
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <h3 class="bento-title">NLP & LLMs</h3>
+          </div>
+          <p class="bento-desc">Elevate your product with a unique identity leveraging Large Language Models that resonate with your audience.</p>
+        </div>
+
+        <!-- Card 4: MLOps -->
+        <div class="bento-card" data-color="pink">
+          <div class="bento-header">
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="bento-title">MLOps</h3>
+          </div>
+          <p class="bento-desc">MLOps is a powerful development tool that empowers seamless deployment, structure and scalability for your systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Favourite Stack Section -->
+  <section id="stack" class="glowing-section">
+    <div class="stack-inner">
+      <h2 class="section-badge">FAVOURITE STACK</h2>
+
+      <div class="stack-grid">
+        <!-- Card 1: Python -->
+        <div class="stack-card" data-color="yellow">
+          <div class="stack-front">
+            <div class="stack-icon"><img src="components/fav_stack/python.png" alt="Python"></div>
+          </div>
+          <div class="stack-back">
+            <h4 class="stack-title">PYTHON</h4>
+            <p class="stack-desc">The backbone of modern AI development, empowering users to create complex machine learning pipelines.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Git -->
+        <div class="stack-card" data-color="orange">
+          <div class="stack-front">
+            <div class="stack-icon"><img src="components/fav_stack/git.png" alt="Git"></div>
+          </div>
+          <div class="stack-back">
+            <h4 class="stack-title">GIT</h4>
+            <p class="stack-desc">Essential version control system for robust, collaborative code evolution and tracking.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Docker -->
+        <div class="stack-card" data-color="blue">
+          <div class="stack-front">
+            <div class="stack-icon"><img src="components/fav_stack/docker.png" alt="Docker"></div>
+          </div>
+          <div class="stack-back">
+            <h4 class="stack-title">DOCKER</h4>
+            <p class="stack-desc">Docker simplifies building, shipping, and running modern AI applications using containerization.</p>
+          </div>
+        </div>
+
+        <!-- Card 4: SQL -->
+        <div class="stack-card" data-color="teal">
+          <div class="stack-front">
+            <div class="stack-icon"><img src="components/fav_stack/mysql.png" alt="SQL"></div>
+          </div>
+          <div class="stack-back">
+            <h4 class="stack-title">SQL</h4>
+            <p class="stack-desc">The standard language for relational database management and high performance querying.</p>
+          </div>
+        </div>
+
+        <!-- Card 5: Redis -->
+        <div class="stack-card" data-color="red">
+          <div class="stack-front">
+            <div class="stack-icon"><img src="components/fav_stack/redis.png" alt="Redis"></div>
+          </div>
+          <div class="stack-back">
+            <h4 class="stack-title">REDIS</h4>
+            <p class="stack-desc">An in-memory data stricture store, used as a robust, scalable distributed key-value database and cache.</p>
+          </div>
+        </div>
+
+        <!-- Card 6: VS Code -->
+        <div class="stack-card" data-color="blue">
+          <div class="stack-front">
+            <div class="stack-icon"><img src="components/fav_stack/vscode.png" alt="VS Code"></div>
+          </div>
+          <div class="stack-back">
+            <h4 class="stack-title">VS CODE</h4>
+            <p class="stack-desc">A feature-rich code editor with deep integration and extensions for an optimal development workflow.</p>
+          </div>
+        </div>
+
+        <!-- Card 7: ChatGPT -->
+        <div class="stack-card" data-color="white">
+          <div class="stack-front">
+            <div class="stack-icon"><img src="components/fav_stack/chatgpt.png" alt="ChatGPT"></div>
+          </div>
+          <div class="stack-back">
+            <h4 class="stack-title">CHATGPT</h4>
+            <p class="stack-desc">Leveraging state-of-the-art conversational AI to build highly capable virtual assistants and generation tools.</p>
+          </div>
+        </div>
+
+        <!-- Card 8: Claude -->
+        <div class="stack-card" data-color="orange">
+          <div class="stack-front">
+            <div class="stack-icon"><img src="components/fav_stack/claude.png" alt="Claude"></div>
+          </div>
+          <div class="stack-back">
+            <h4 class="stack-title">CLAUDE</h4>
+            <p class="stack-desc">Utilizing next-generation safe AI models from Anthropic to ensure accurate, long-context text processing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="glowing-section">
+    <div class="contact-inner">
+      <div class="contact-grid">
+
+        <!-- Left Column: Text & Form -->
+        <div class="contact-left">
+          <h2 class="contact-title">CONTACT ME</span></h2>
+          <p class="contact-desc">Let's build something <span class="about-highlight">great together.</p>
+
+          <form class="contact-form" action="https://formsubmit.co/rishikeshpatil400@gmail.com" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" class="hero-btn submit-btn">Send Message</button>
+            <input type="hidden" name="_next" value="https://therishipatil.github.io/Portfolio/ThankyouPage">
+          </form>
+        </div>
+
+        <!-- Right Column: Quote Image -->
+        <div class="contact-right">
+          <div class="quote-wrap">
+            <img src="components/luffy_quote.jpg" alt="Motivational Quote" class="quote-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <!-- Left Col: Bio & Logo -->
+        <div class="footer-col footer-bio">
+          <div class="about-author" style="margin-bottom: 1.5rem;">
+            <div class="about-avatar-grad"><img src="components/luffy.jpg" alt="Rishikesh" /></div>
+            <div>
+              <p class="about-author-name">Rishikesh Patil</p>
+              <p class="about-author-role">AI Engineer</p>
+            </div>
+          </div>
+          <!-- <h3 class="footer-tagline">I am Rishikesh, your best friend in AI Engineering.</h3> -->
+          <p class="footer-desc">Dedicated to creating intelligent, user-friendly, and highly scalable systems that
+            solve real-world problems.</p>
+        </div>
+
+        <!-- Middle Col: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-list">
+            <li><a href="#scrolly-container"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Home</a></li>
+            <li><a href="#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> About Me</a></li>
+            <li><a href="#experience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Experience</a></li>
+            <li><a href="#expertise"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Expertise</a></li>
+            <li><a href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Social Links</h4>
+          <ul class="footer-list">
+            <li><a href="https://github.com/TheRishiPatil" target="_blank"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/patilrishikesh/" target="_blank"><svg viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> LinkedIn</a></li>
+            <li><a href="https://x.com/Rishi9137108042" target="_blank"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> X (Twitter)</a></li>
+            <li><a href="https://www.instagram.com/i_a_m_i_r_o_n_m_a_n/" target="_blank"><svg viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Instagram</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=919137108042" target="_blank"><svg viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Rishikesh. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
