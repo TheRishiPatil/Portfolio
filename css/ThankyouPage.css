@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 90vh;
+    height: 100vh;
     background-color: #0D0D10;
     font-family: 'Oxanium', cursive;
     color: white;
@@ -9,14 +9,17 @@ body {
     justify-content: center;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    padding: 0 24px;
+    gap: 12px;
 }
 
-.loading-gif{
+.loading-gif {
     width: 150px;
 }
 
@@ -24,14 +27,71 @@ body {
     color: white;
     font-size: 18px;
     font-weight: 500;
+    margin: 0;
+    line-height: 1.5;
 }
 
-@media screen and (max-width : 480px) {
-    .loading-gif{
-        width: 150px;
+#secondDisplay {
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+
+/* ── Tablet (481px – 768px) ── */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 32px;
+        gap: 10px;
     }
-    
+
+    .loading-gif {
+        width: 120px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    #secondDisplay {
+        font-size: 13px;
+    }
+}
+
+/* ── Mobile (≤ 480px) ── */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+        gap: 8px;
+    }
+
+    .loading-gif {
+        width: 100px;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+
+    #secondDisplay {
+        font-size: 11px;
+    }
+}
+
+/* ── Small Mobile (≤ 360px) ── */
+@media screen and (max-width: 360px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .loading-gif {
+        width: 80px;
+    }
+
     .text {
         font-size: 12px;
+    }
+
+    #secondDisplay {
+        font-size: 10px;
     }
 }

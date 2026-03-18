@@ -48,7 +48,7 @@ window.addEventListener('resize', () => {
 /* ─────────────────────────────────────────────────
    DRAW FRAME  (object-fit: cover behaviour)
 ───────────────────────────────────────────────── */
-function drawFrame(index) {
+function drawFrame(index, alpha = 1) {
   if (!images.length) return;
 
   const img = images[Math.min(Math.round(index), TOTAL_FRAMES - 1)];
@@ -70,7 +70,9 @@ function drawFrame(index) {
   }
 
   ctx.clearRect(0, 0, cw, ch);
+  ctx.globalAlpha = alpha;
   ctx.drawImage(img, ox, oy, dw, dh);
+  ctx.globalAlpha = 1;
 }
 
 /* ─────────────────────────────────────────────────
@@ -361,7 +363,17 @@ onScroll(); // sync initial state
 // Try to preload frames in background
 preload().then((hasFrames) => {
   if (hasFrames) {
-    drawFrame(0);
+    let alpha = 0;
+    const fade = () => {
+      alpha += 0.03;
+      if (alpha >= 1) {
+        drawFrame(0, 1);
+        return;
+      }
+      drawFrame(0, alpha);
+      requestAnimationFrame(fade);
+    };
+    fade();
   }
 });
 
@@ -417,6 +429,7 @@ preload().then((hasFrames) => {
   const sections = [
     { id: 'scrolly-container', link: document.querySelector('[data-section="home"]') },
     { id: 'about', link: document.querySelector('[data-section="about"]') },
+    { id: 'experience', link: document.querySelector('[data-section="experience"]') },
     { id: 'contact', link: document.querySelector('[data-section="contact"]') },
   ];
 
@@ -429,16 +442,6 @@ preload().then((hasFrames) => {
       const rect = el.getBoundingClientRect();
       if (rect.top <= mid) current = link;
     });
-
-    // Experience link mirrors about section
-    const experienceLink = document.querySelector('[data-section="experience"]');
-    const aboutEl = document.getElementById('about');
-    if (aboutEl) {
-      const r = aboutEl.getBoundingClientRect();
-      if (r.top <= mid && r.bottom >= mid) {
-        current = experienceLink;
-      }
-    }
 
     if (!current.classList.contains('active')) setActive(current);
   }
